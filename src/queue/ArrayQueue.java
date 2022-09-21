@@ -1,15 +1,16 @@
 package queue;
 
-public class ArrayQueue {
+public class ArrayQueue<T> {
 
 	public static final int EMPTY = 0;
 	public static final int FULL = 1000;
 	
-	private int[] vector;
+	private T[] vector;
 	private int size;
 	
+	@SuppressWarnings("unchecked")
 	public ArrayQueue() {
-		vector = new int[FULL];
+		vector = (T[]) new Object[FULL];
 		size = 0;
 	}
 	
@@ -21,7 +22,7 @@ public class ArrayQueue {
 		return size == FULL;
 	}
 	
-	public void enqueue(int data) {
+	public void enqueue(T data) {
 		assert !isFull();
 		if (isEmpty()) {
 			vector[size++] = data;
@@ -40,7 +41,7 @@ public class ArrayQueue {
 		size++;
 	}
 	
-	public int dequeue() {
+	public T dequeue() {
 		return vector[--size];
 	}
 	

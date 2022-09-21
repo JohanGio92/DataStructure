@@ -1,10 +1,8 @@
 package main;
 
-import java.util.AbstractQueue;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.Queue;
 
 import queue.ArrayQueue;
@@ -13,7 +11,7 @@ public class App {
 
 	public static void main(String[] args) {
 		
-		ArrayQueue arrayQueue = new ArrayQueue();
+		ArrayQueue<Integer> arrayQueue = new ArrayQueue<Integer>();
 		
 		arrayQueue.enqueue(0);
 		arrayQueue.enqueue(1);
