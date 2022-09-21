@@ -29,8 +29,8 @@ public class PriorityQueueArray {
 		int index = this.highPriorityIndex();
 		
 		for (int i = 0; i < size; i++) {
-			if(items[i].getPriority() == items[index].getPriority()) {
-				if(items[i].getValue() > items[index].getValue()) {
+			if(items[i].equals(items[index])) {
+				if(items[i].greaterThan(items[index])) {
 					index = i;
 				}
 			}
