@@ -2,21 +2,21 @@ package link;
 
 public class Node<E> {
 	
-	private E data;
+	private E element;
 	private Node<E> next;
 
 	public Node(E data) {
 		super();
-		this.data = data;
+		this.element = data;
 		this.next = null;
 	}
 
-	public E getData() {
-		return data;
+	public E getElement() {
+		return element;
 	}
 
-	public void setData(E data) {
-		this.data = data;
+	public void setElement(E element) {
+		this.element = element;
 	}
 
 	public Node<E> getNext() {
