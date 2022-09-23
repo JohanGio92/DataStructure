@@ -2,7 +2,6 @@ package main;
 
 import tree.BinarySearchTree;
 import tree.Node;
-import util.Symbol;
 
 public class App {
 
@@ -23,7 +22,13 @@ public class App {
 		binarySearchTree.add(5);
 		binarySearchTree.add(11);
 		binarySearchTree.add(20);
+		binarySearchTree.remove(5);
 		binarySearchTree.inOrder();
+	
+		System.out.println("======================");
+		System.out.println(binarySearchTree.find(21));
+		System.out.println(binarySearchTree.getMin());
+		System.out.println(binarySearchTree.getMax());
 		
 	}
 
