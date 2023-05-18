@@ -1,4 +1,4 @@
-# DataStructure
+# Data Structure
 
 A data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently.
 ## Table of Content
@@ -18,7 +18,8 @@ A data structure is a storage that is used to store and organize data. It is a w
 ## Important
 
 > To see all implementation of each data structure. 
-> Please go to their respective branches
+>
+> Please go to their respective **branches**
 
 ## Stack
 
